@@ -25,3 +25,10 @@ p_btns.addEventListener("click", (e) => {
     curElem.classList.remove("p-image-not-active"),
   );
 });
+
+// SWIPER
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
