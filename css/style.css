@@ -13,7 +13,9 @@
   --para-tint: #e4e4e4;
   --black: #212529;
   --white: #fff;
+  --white-contrast: #adadad;
   --helper: #8490ff;
+  --overlay: #3e64ff;
   --helper-tint: #f3f4ff;
   --bg: rgb(249 249 255);
   --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
@@ -586,4 +588,152 @@ li {
   height: 10rem;
   border-radius: 50%;
   border: 0.5 solid var(--helper-tint);
+}
+
+/* =================================
+            FREELANCING SECTION
+  ================================= */
+
+.section-freelancing {
+  background-image: url("../img/bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  transition: all 0.7s linear;
+  text-align: center;
+}
+
+.section-freelancing .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  opacity: 0.6;
+}
+
+.section-freelancing .container {
+  position: relative;
+}
+
+.section-freelancing h2 {
+  font-size: 5.4rem;
+}
+
+.section-freelancing span {
+  color: #a0ff69;
+}
+
+.section-freelancing h2,
+.section-freelancing p {
+  color: var(--white);
+  margin-bottom: 1.8rem;
+}
+
+/* =================================
+            CONTACT US SECTION
+  ================================= */
+.section-contact-main {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 9rem;
+  transition: all 0.3s linear;
+}
+
+.section-contact-main .grid {
+  gap: 3.2rem;
+}
+
+.section-contact-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.section-contact-main input,
+.section-contact-main textarea {
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 5px;
+  font-family: "work sans";
+  width: 100%;
+}
+
+.section-contact-main input[type="submit"] {
+  max-width: 30%;
+  border: none;
+}
+
+/* =================================
+            FOOTER SECTION
+  ================================= */
+.section-footer {
+  background: var(--heading);
+  transition: all 0.7s linear;
+}
+
+.section-footer h3 {
+  color: var(--white);
+  margin-bottom: 4rem;
+}
+
+.f-about p {
+  color: var(--white-contrast);
+}
+
+.f-links ul,
+.f-services ul,
+.f-address address {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+  font-size: 1.8rem;
+  color: var(--white-contrast);
+  text-transform: capitalize;
+}
+
+.f-links span,
+.f-services span,
+.f-address span {
+  margin-right: 1rem;
+}
+
+.f-address p,
+.f-address p a {
+  color: var(--white-contrast);
+}
+
+.f-social-links {
+  margin: 5rem;
+  text-align: center;
+  color: var(--white-contrast);
+}
+
+.f-social-links .icons {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--icons-bg);
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: var(--white);
+  animation: water-wave 3s linear infinite;
+}
+
+.f-credits p {
+  text-align: center;
+  color: var(--white-contrast);
+}
+
+.section-footer a:hover,
+.section-footer a:active {
+  color: var(--white);
 }
