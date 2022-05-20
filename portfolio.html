@@ -22,7 +22,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- WEBSITE CONTENT -->
-    <script defer src="./js/app.js"></script>
+    <script defer src="./js/portfolio.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Services - Technical Shampy</title>
 </head>
@@ -36,7 +36,7 @@
             <ul class="navbar-list">
                 <li><a href="/index.html" class="navbar-link home-link">Home</a></li>
                 <li><a href="/service.html" class="navbar-link services-link">Services</a></li>
-                <li><a href="/portfolio.html" class="navbar-link portfolio-link">Portfolio</a></li>
+                <li><a href="#portfolio-section" class="navbar-link portfolio-link">Portfolio</a></li>
                 <li><a href="/contact.html" class="navbar-link contact-link">Contact</a></li>
                 <li><a href="/about.html" class="navbar-link about-link">About</a></li>
             </ul>
@@ -382,57 +382,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- MESSENGER -->
-    <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "110071717809806");
-        chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v13.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <script>
-        const scrollView = document.querySelector(".header");
-        const footerElem = document.querySelector(".section-footer");
-
-        const scrollElement = document.createElement("div");
-        scrollElement.classList.add("scrollTop-style");
-
-        scrollElement.innerHTML = `<ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>`;
-
-        footerElem.after(scrollElement);
-
-        function scrollTop() {
-            scrollView.scrollIntoView({ behavior: "smooth" });
-        }
-
-        scrollElement.addEventListener("click", scrollTop);
-
-    </script>
 
     <!-- Libraries -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
