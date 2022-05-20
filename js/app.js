@@ -45,7 +45,7 @@ var swiper = new Swiper(".mySwiper", {
 /* =======================================
     SCROLL TO TOP FUNCTIONALITY
    ======================================= */
-const heroSection = document.querySelector(".section-hero");
+const scrollView = document.querySelector(".header");
 const footerElem = document.querySelector(".section-footer");
 
 const scrollElement = document.createElement("div");
@@ -56,7 +56,7 @@ scrollElement.innerHTML = `<ion-icon name="arrow-up-outline" class="scroll-top">
 footerElem.after(scrollElement);
 
 function scrollTop() {
-  heroSection.scrollIntoView({ behavior: "smooth" });
+  scrollView.scrollIntoView({ behavior: "smooth" });
 }
 
 scrollElement.addEventListener("click", scrollTop);
