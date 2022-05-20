@@ -468,6 +468,7 @@ li {
   color: var(--heading);
   background-color: var(--icons-bg);
   animation: water-wave 3s linear infinite;
+  cursor: pointer;
 }
 
 .service-icon::after {
@@ -482,6 +483,7 @@ li {
   background-color: transparent;
   border: solid 1px var(--black);
   animation: water-wave 3s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes water-wave {
@@ -726,6 +728,7 @@ li {
   position: relative;
   color: var(--white);
   animation: water-wave 3s linear infinite;
+  cursor: pointer;
 }
 
 .f-credits p {
@@ -736,4 +739,23 @@ li {
 .section-footer a:hover,
 .section-footer a:active {
   color: var(--white);
+}
+
+/* scrollToTop styles */
+.scrollTop-style {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  z-index: 1;
+}
+
+.scroll-top {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--helper);
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  color: var(--heading);
+  animation: water-wave 3s linear infinite;
+  cursor: pointer;
 }

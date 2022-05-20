@@ -26,7 +26,9 @@ p_btns.addEventListener("click", (e) => {
   );
 });
 
-// SWIPER
+/* =======================================
+    SWIPER ANIMATION
+   ======================================= */
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 30,
@@ -39,3 +41,22 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+/* =======================================
+    SCROLL TO TOP FUNCTIONALITY
+   ======================================= */
+const heroSection = document.querySelector(".section-hero");
+const footerElem = document.querySelector(".section-footer");
+
+const scrollElement = document.createElement("div");
+scrollElement.classList.add("scrollTop-style");
+
+scrollElement.innerHTML = `<ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>`;
+
+footerElem.after(scrollElement);
+
+function scrollTop() {
+  heroSection.scrollIntoView({ behavior: "smooth" });
+}
+
+scrollElement.addEventListener("click", scrollTop);
