@@ -405,14 +405,14 @@ li {
   display: none;
 }
 
-/* =================================
-            WORK DATA SECTION
-  ================================= */
+/* ===========================================
+          work data Section
+======================================= */
 .section-work-data {
   background: var(--gradientSupport);
+  color: var(--white);
   text-align: center;
   transition: all 0.7s linear;
-  color: var(--white);
 }
 
 .counter-numbers {
@@ -421,7 +421,6 @@ li {
 
 .section-work-data p {
   color: var(--white);
-  text-transform: capitalize;
 }
 
 /* =================================

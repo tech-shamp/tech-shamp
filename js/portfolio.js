@@ -44,3 +44,24 @@ p_btns.addEventListener("click", (e) => {
     curElem.classList.remove("p-image-not-active"),
   );
 });
+
+/* =======================================
+    COUNTER NUMBER ANIMATION
+   ======================================= */
+const counterNum = document.querySelectorAll(".counter-numbers");
+const speed = 200;
+
+counterNum.forEach((curElem) => {
+  const updateNumber = () => {
+    const targetNumber = parseInt(curElem.dataset.number);
+    const initialNum = parseInt(curElem.innerText);
+    const incrementNum = Math.trunc(targetNumber / speed);
+
+    if (initialNum < targetNumber) {
+      curElem.innerText = `${initialNum + incrementNum}+`;
+      setTimeout(updateNumber, 10);
+    }
+  };
+
+  updateNumber();
+});
