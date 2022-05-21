@@ -91,3 +91,13 @@ home.classList.add("active");
 
 const flinks = document.querySelector(".f-home-link");
 flinks.classList.add("f-links-active");
+
+/* =======================================
+                RESPONSIVE NAVBAR COMPONENT
+   ======================================= */
+const mobile_nav = document.querySelector(".mobile-nav-btn");
+const headerElem = document.querySelector(".header");
+
+mobile_nav.addEventListener("click", () => {
+  headerElem.classList.toggle("navActive");
+});
