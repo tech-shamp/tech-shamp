@@ -37,6 +37,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -70,6 +71,11 @@ a {
 
 li {
   list-style: none;
+}
+
+::selection {
+  color: var(--black);
+  background: var(--helper);
 }
 
 /* ========================================

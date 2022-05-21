@@ -62,27 +62,6 @@ function scrollTop() {
 scrollElement.addEventListener("click", scrollTop);
 
 /* =======================================
-    COUNTER NUMBER ANIMATION
-   ======================================= */
-const counterNum = document.querySelectorAll(".counter-numbers");
-const speed = 200;
-
-counterNum.forEach((curElem) => {
-  const updateNumber = () => {
-    const targetNumber = parseInt(curElem.dataset.number);
-    const initialNum = parseInt(curElem.innerText);
-    const incrementNum = Math.trunc(targetNumber / speed);
-
-    if (initialNum < targetNumber) {
-      curElem.innerText = `${initialNum + incrementNum}+`;
-      setTimeout(updateNumber, 10);
-    }
-  };
-
-  updateNumber();
-});
-
-/* =======================================
                 COLOR CHANGE
    ======================================= */
 const home = document.querySelector(".home-link");
@@ -103,7 +82,7 @@ mobile_nav.addEventListener("click", () => {
 });
 
 /* =======================================
-                STICKY NAVBAR
+        COUNTER ANIMATION VIEWPORT
    ======================================= */
 const secForSticky = document.querySelector(".section-hero");
 const stickyNav = new IntersectionObserver(
@@ -120,3 +99,35 @@ const stickyNav = new IntersectionObserver(
 );
 
 stickyNav.observe(secForSticky);
+
+// VIEWPORT ANIMATION
+const WorkData = document.querySelector(".section-work-data");
+const workObserver = new IntersectionObserver(
+  (entries, observer) => {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+
+    // COUNTER SECTION
+    const counterNum = document.querySelectorAll(".counter-numbers");
+    const speed = 200;
+
+    counterNum.forEach((curElem) => {
+      const updateNumber = () => {
+        const targetNumber = parseInt(curElem.dataset.number);
+        const initialNum = parseInt(curElem.innerText);
+        const incrementNum = Math.trunc(targetNumber / speed);
+
+        if (initialNum < targetNumber) {
+          curElem.innerText = `${initialNum + incrementNum}+`;
+          setTimeout(updateNumber, 10);
+        }
+      };
+
+      updateNumber();
+    });
+    observer.unobserve(WorkData);
+  },
+  { root: null, threshold: 0 },
+);
+
+workObserver.observe(WorkData);
