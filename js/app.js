@@ -81,3 +81,13 @@ counterNum.forEach((curElem) => {
 
   updateNumber();
 });
+
+/* =======================================
+                COLOR CHANGE
+   ======================================= */
+const home = document.querySelector(".home-link");
+// home.style.color = "var(--helper)";
+home.classList.add("active");
+
+const flinks = document.querySelector(".f-home-link");
+flinks.classList.add("f-links-active");

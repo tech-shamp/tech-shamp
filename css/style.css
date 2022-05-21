@@ -109,6 +109,14 @@ li {
   color: var(--helper);
 }
 
+.active {
+  color: var(--helper) !important;
+}
+
+.f-links-active {
+  color: var(--white) !important;
+}
+
 /* =================================
             REUSABLE CODE
   ================================= */

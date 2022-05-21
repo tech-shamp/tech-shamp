@@ -16,3 +16,13 @@ function scrollTop() {
 }
 
 scrollElement.addEventListener("click", scrollTop);
+
+/* =======================================
+                COLOR CHANGE
+   ======================================= */
+const contact = document.querySelector(".contact-link");
+// contact.style.color = "var(--helper)";
+contact.classList.add("active");
+
+const flinks = document.querySelector(".f-cont-link");
+flinks.classList.add("f-links-active");

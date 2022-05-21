@@ -65,3 +65,13 @@ counterNum.forEach((curElem) => {
 
   updateNumber();
 });
+
+/* =======================================
+                COLOR CHANGE
+   ======================================= */
+const portfolio = document.querySelector(".portfolio-link");
+// portfolio.style.color = "var(--helper)";
+portfolio.classList.add("active");
+
+const flinks = document.querySelector(".f-port-link");
+flinks.classList.add("f-links-active");
