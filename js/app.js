@@ -45,7 +45,7 @@ var swiper = new Swiper(".mySwiper", {
 /* =======================================
     SCROLL TO TOP FUNCTIONALITY
    ======================================= */
-const scrollView = document.querySelector(".header");
+const scrollView = document.querySelector(".section-hero");
 const footerElem = document.querySelector(".section-footer");
 
 const scrollElement = document.createElement("div");
@@ -101,3 +101,22 @@ const headerElem = document.querySelector(".header");
 mobile_nav.addEventListener("click", () => {
   headerElem.classList.toggle("navActive");
 });
+
+/* =======================================
+                STICKY NAVBAR
+   ======================================= */
+const secForSticky = document.querySelector(".section-hero");
+const stickyNav = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    !ent.isIntersecting
+      ? document.body.classList.add("sticky")
+      : document.body.classList.remove("sticky");
+  },
+  {
+    root: null,
+    threshold: 0,
+  },
+);
+
+stickyNav.observe(secForSticky);

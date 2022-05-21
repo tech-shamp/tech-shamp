@@ -103,6 +103,7 @@ li {
   text-transform: uppercase;
   color: var(--black);
   transition: all 0.3s linear;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-link:hover,
@@ -120,6 +121,24 @@ li {
 
 .mobile-nav-icon[name="close-outline"] {
   display: none;
+}
+
+/* ?STICKY NAVBAR */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: all 0.3s linear;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: var(--shadow);
+}
+
+.sticky .section-hero {
+  margin-top: 10rem;
 }
 
 /* ACTIVE CLASSES */
