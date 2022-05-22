@@ -46,25 +46,40 @@ p_btns.addEventListener("click", (e) => {
 });
 
 /* =======================================
-    COUNTER NUMBER ANIMATION
+    COUNTER SECTION ANIMATION
    ======================================= */
-const counterNum = document.querySelectorAll(".counter-numbers");
-const speed = 200;
 
-counterNum.forEach((curElem) => {
-  const updateNumber = () => {
-    const targetNumber = parseInt(curElem.dataset.number);
-    const initialNum = parseInt(curElem.innerText);
-    const incrementNum = Math.trunc(targetNumber / speed);
+// VIEWPORT ANIMATION
+const WorkData = document.querySelector(".section-work-data");
+const workObserver = new IntersectionObserver(
+  (entries, observer) => {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
 
-    if (initialNum < targetNumber) {
-      curElem.innerText = `${initialNum + incrementNum}+`;
-      setTimeout(updateNumber, 10);
-    }
-  };
+    // COUNTER SECTION
+    const counterNum = document.querySelectorAll(".counter-numbers");
+    const speed = 200;
 
-  updateNumber();
-});
+    counterNum.forEach((curElem) => {
+      const updateNumber = () => {
+        const targetNumber = parseInt(curElem.dataset.number);
+        const initialNum = parseInt(curElem.innerText);
+        const incrementNum = Math.trunc(targetNumber / speed);
+
+        if (initialNum < targetNumber) {
+          curElem.innerText = `${initialNum + incrementNum}+`;
+          setTimeout(updateNumber, 10);
+        }
+      };
+
+      updateNumber();
+    });
+    observer.unobserve(WorkData);
+  },
+  { root: null, threshold: 0 },
+);
+
+workObserver.observe(WorkData);
 
 /* =======================================
                 COLOR CHANGE
@@ -77,7 +92,7 @@ const flinks = document.querySelector(".f-port-link");
 flinks.classList.add("f-links-active");
 
 /* =======================================
-                RESPONSIVE NAVBAR COMPONENT
+          RESPONSIVE NAVBAR COMPONENT
    ======================================= */
 const mobile_nav = document.querySelector(".mobile-nav-btn");
 const headerElem = document.querySelector(".header");
@@ -85,3 +100,21 @@ const headerElem = document.querySelector(".header");
 mobile_nav.addEventListener("click", () => {
   headerElem.classList.toggle("navActive");
 });
+
+/* =======================================
+        STICKY NAV STYLES
+   ======================================= */
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".header").style.height = "6.5rem";
+    document.querySelector(".header").style.boxShadow =
+      "-21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3)";
+  } else {
+    document.querySelector(".header").style.height = "10rem";
+    document.querySelector(".header").style.boxShadow = "";
+  }
+}

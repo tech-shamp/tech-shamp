@@ -26,3 +26,26 @@ if ((title.contains = homeText)) {
 }
 
 console.log(title);
+
+/* =======================================
+        LAZY LOADING IMAGES
+   ======================================= */
+const imgElem = document.querySelectorAll("img[data-src]");
+
+const lazyLoadingObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.src = entry.target.dataset.src;
+    });
+
+    console.log(entries);
+  },
+  {
+    root: null,
+    threshold: 0.7,
+  },
+);
+imgElem.forEach((image) => {
+  lazyLoadingObserver.observe(image);
+});

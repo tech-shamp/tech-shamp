@@ -72,7 +72,7 @@ const flinks = document.querySelector(".f-home-link");
 flinks.classList.add("f-links-active");
 
 /* =======================================
-                RESPONSIVE NAVBAR COMPONENT
+        RESPONSIVE NAVBAR COMPONENT
    ======================================= */
 const mobile_nav = document.querySelector(".mobile-nav-btn");
 const headerElem = document.querySelector(".header");
@@ -82,23 +82,22 @@ mobile_nav.addEventListener("click", () => {
 });
 
 /* =======================================
-        COUNTER ANIMATION VIEWPORT
+        STICKY NAV STYLES
    ======================================= */
-const secForSticky = document.querySelector(".section-hero");
-const stickyNav = new IntersectionObserver(
-  (entries) => {
-    const ent = entries[0];
-    !ent.isIntersecting
-      ? document.body.classList.add("sticky")
-      : document.body.classList.remove("sticky");
-  },
-  {
-    root: null,
-    threshold: 0,
-  },
-);
+window.onscroll = function () {
+  scrollFunction();
+};
 
-stickyNav.observe(secForSticky);
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".header").style.height = "6.5rem";
+    document.querySelector(".header").style.boxShadow =
+      "-21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3)";
+  } else {
+    document.querySelector(".header").style.height = "10rem";
+    document.querySelector(".header").style.boxShadow = "";
+  }
+}
 
 // VIEWPORT ANIMATION
 const WorkData = document.querySelector(".section-work-data");
@@ -131,3 +130,27 @@ const workObserver = new IntersectionObserver(
 );
 
 workObserver.observe(WorkData);
+
+/* =======================================
+        LAZY LOADING IMAGES
+   ======================================= */
+const imageElement = document.querySelectorAll("img[data-src]");
+
+const lazyLoad = (entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.src = entry.target.dataset.src;
+  });
+  // console.log(entries);
+};
+
+const lazyLoadObserver = new IntersectionObserver(lazyLoad, {
+  root: null,
+  threshold: 0.7,
+});
+
+imageElement.forEach((image) => {
+  lazyLoadObserver.observe(image);
+});
+
+// CHANGE IT ON OTHER PAGES

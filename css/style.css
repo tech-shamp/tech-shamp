@@ -82,12 +82,16 @@ li {
             HEADER SECTION START
    ========================================   */
 .header {
+  position: fixed;
+  top: 0;
   padding: 0 4.8rem;
   height: 10rem;
-  background-color: var(--bg);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease;
   z-index: 999;
 }
 
@@ -127,24 +131,6 @@ li {
 
 .mobile-nav-icon[name="close-outline"] {
   display: none;
-}
-
-/* ?STICKY NAVBAR */
-.sticky .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 8rem;
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  transition: all 0.3s linear;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: var(--shadow);
-}
-
-.sticky .section-hero {
-  margin-top: 10rem;
 }
 
 /* ACTIVE CLASSES */
@@ -555,7 +541,7 @@ li {
 
 .resume-image img {
   width: 80%;
-  box-shadow: -2rem -2rem 0 0 var(--helper);
+  box-shadow: -2rem 2rem 0 0 var(--helper);
   display: inline-block;
 }
 
@@ -888,7 +874,7 @@ li {
   .mobile-nav-btn {
     display: block;
     z-index: 9999;
-    border: 3px solid var(--black);
+    border: 2px solid var(--black);
     color: #212529;
   }
   .mobile-nav-icon {

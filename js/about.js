@@ -36,3 +36,43 @@ const headerElem = document.querySelector(".header");
 mobile_nav.addEventListener("click", () => {
   headerElem.classList.toggle("navActive");
 });
+
+/* =======================================
+        STICKY NAV STYLES
+   ======================================= */
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".header").style.height = "6.5rem";
+    document.querySelector(".header").style.boxShadow =
+      "-21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3)";
+  } else {
+    document.querySelector(".header").style.height = "10rem";
+    document.querySelector(".header").style.boxShadow = "";
+  }
+}
+
+/* =======================================
+        LAZY LOADING IMAGES
+   ======================================= */
+const imageElement = document.querySelectorAll("img[data-src]");
+
+const lazyLoad = (entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.src = entry.target.dataset.src;
+  });
+  // console.log(entries);
+};
+
+const lazyLoadObserver = new IntersectionObserver(lazyLoad, {
+  root: null,
+  threshold: 0.7,
+});
+
+imageElement.forEach((image) => {
+  lazyLoadObserver.observe(image);
+});
