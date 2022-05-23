@@ -24,7 +24,7 @@ I know some about Graphics Designing & Video Editing too though I am not a profe
 
 ![Technical Shampy's GitHub stats](https://github-readme-stats.vercel.app/api?username=tech-shamp&theme=ayu-mirage)
 
-![Technical Shampy's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=tech-shamp&theme=ayu-mirage)
+![Technical Shampy's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=iboy_shamp&theme=ayu-mirage)
 
 ![Technical Shampy's code time stats](https://img.shields.io/endpoint?style=for-the-badge&url=https://codetime-api.datreks.com/badge/4348?logoColor=white%26project=%26recentMS=0%26showProject=false)
 
