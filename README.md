@@ -24,13 +24,13 @@ I know some about Graphics Designing & Video Editing too though I am not a profe
 
 ![Technical Shampy's GitHub stats](https://github-readme-stats.vercel.app/api?username=tech-shamp&theme=ayu-mirage)
 
-<!-- ![Technical Shampy's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=tech-shamp&theme=ayu-mirage) -->
+![Technical Shampy's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=tech-shamp&theme=ayu-mirage)
 
 ---
 
 ### ✴️ My Top Projects
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=portfolio&theme=ayu-mirage)](https://github.com/anuraghazra/github-readme-stats) [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=nooreazal&theme=ayu-mirage)](https://github.com/anuraghazra/github-readme-stats) [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=practice&theme=ayu-mirage)](https://github.com/anuraghazra/github-readme-stats) [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=nooreazal-remake&theme=ayu-mirage)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=portfolio&theme=ayu-mirage)] [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=nooreazal&theme=ayu-mirage)] [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=practice&theme=ayu-mirage)] [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=nooreazal-remake&theme=ayu-mirage)]
 
 <!--
 **tech-shamp/tech-shamp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
