@@ -26,15 +26,13 @@ I know some about Graphics Designing & Video Editing too though I am not a profe
 
 ![Technical Shampy's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=tech-shamp&theme=ayu-mirage)
 
-<!-- ![Technical Shampy's codetime stats](https://github-readme-stats.vercel.app/api/wakatime?username=tech-shamp&theme=ayu-mirage) -->
+![Technical Shampy's code time stats](https://img.shields.io/endpoint?style=for-the-badge&url=https://codetime-api.datreks.com/badge/4348?logoColor=white%26project=%26recentMS=0%26showProject=false)
 
 ---
 
 ### ✴️ My Top Projects
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=portfolio&theme=ayu-mirage)] [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=nooreazal&theme=ayu-mirage)] [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=practice&theme=ayu-mirage)] [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=tech-shamp&repo=nooreazal-remake&theme=ayu-mirage)]
-
-<img alt="Code Time" src="https://img.shields.io/endpoint?style=for-the-badge&url=https://codetime-api.datreks.com/badge/4348?logoColor=white%26project=%26recentMS=0%26showProject=false" />
 
 <!--
 **tech-shamp/tech-shamp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
