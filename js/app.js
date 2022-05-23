@@ -93,9 +93,13 @@ function scrollFunction() {
     document.querySelector(".header").style.height = "6.5rem";
     document.querySelector(".header").style.boxShadow =
       "-21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3)";
+    document.querySelector(".mobile-nav-icon").style.width = "3rem";
+    document.querySelector(".mobile-nav-icon").style.height = "3rem";
   } else {
     document.querySelector(".header").style.height = "10rem";
     document.querySelector(".header").style.boxShadow = "";
+    document.querySelector(".mobile-nav-icon").style.width = "5rem";
+    document.querySelector(".mobile-nav-icon").style.height = "5rem";
   }
 }
 
