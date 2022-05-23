@@ -989,3 +989,77 @@ li {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* 780px */
+@media (max-width: 49em) {
+  .container {
+    max-width: 75rem;
+  }
+  .section-hero-data {
+    text-align: center;
+    /* align-items: center; */
+  }
+  .section-hero .grid-two-column {
+    grid-template-columns: 1fr;
+    padding-top: 7rem;
+  }
+  .section-hero-image img {
+    width: 70%;
+  }
+
+  .section-portfolio .grid-three-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-bio .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .section-bio .bio-image {
+    grid-row: 2;
+    margin-top: 3.2rem;
+  }
+  .section-bio .bio-image img {
+    width: 50%;
+  }
+  .section-work-data .grid-four-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 560px */
+@media (max-width: 35em) {
+  html {
+    font-size: 47%;
+  }
+
+  .container {
+    max-width: 65rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+  .header .logo {
+    height: 4rem;
+  }
+
+  .section-portfolio .img-overlay .common-heading {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .p-btns {
+    gap: 1.5rem;
+  }
+  .btn {
+    padding: 1rem 2rem;
+  }
+
+  .counter-numbers {
+    font-size: 3.2rem;
+  }
+
+  .section-services .grid-three-column {
+    grid-template-columns: 1fr;
+  }
+}
