@@ -29,7 +29,7 @@ p_btns.addEventListener("click", (e) => {
 /* =======================================
     SWIPER ANIMATION
    ======================================= */
-var swiper = new Swiper(".mySwiper", {
+new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 30,
   autoplay: {
@@ -41,6 +41,44 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+// WINDOW.MATCHMEDIA METHOD
+
+const swiperMedia = (e) => {
+  if (e.matches) {
+    new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  } else {
+    new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+};
+
+const widthSize = window.matchMedia("(max-width: 780px)");
+
+swiperMedia(widthSize);
+
+widthSize.addEventListener("change", swiperMedia);
 
 /* =======================================
     SCROLL TO TOP FUNCTIONALITY

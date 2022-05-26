@@ -1062,4 +1062,40 @@ li {
   .section-services .grid-three-column {
     grid-template-columns: 1fr;
   }
+  .resume-data-subsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .resume-data-right {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.2rem;
+  }
+  .resume-data-subsection .resume-data-left .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .resume-data-right .resume-data-button,
+  .resume-data-bottom-subsection .resume-data-button {
+    min-width: 30%;
+  }
+
+  .section-freelancing h2 {
+    font-size: 3.2rem;
+  }
+  .section-contact-main {
+    padding: 0 3.2rem;
+  }
+  .section-contact-main .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+  .section-contact-main input[type="submit"] {
+    max-width: 40%;
+  }
+
+  .section-footer .f-about,
+  .section-footer .f-address {
+    grid-column: 1/-1;
+  }
 }
