@@ -30,22 +30,23 @@ console.log(title);
 /* =======================================
         LAZY LOADING IMAGES
    ======================================= */
-const imgElem = document.querySelectorAll("img[data-src]");
+const imageElement = document.querySelectorAll("img[data-src]");
 
-const lazyLoadingObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.src = entry.target.dataset.src;
-    });
+const lazyLoad = (entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.src = entry.target.dataset.src;
+  });
+  // console.log(entries);
+};
 
-    console.log(entries);
-  },
-  {
-    root: null,
-    threshold: 0.7,
-  },
-);
-imgElem.forEach((image) => {
-  lazyLoadingObserver.observe(image);
+const lazyLoadObserver = new IntersectionObserver(lazyLoad, {
+  root: null,
+  threshold: 0.7,
 });
+
+imageElement.forEach((image) => {
+  lazyLoadObserver.observe(image);
+});
+
+// CHANGE IT ON OTHER PAGES

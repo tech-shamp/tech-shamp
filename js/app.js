@@ -129,12 +129,14 @@ window.onscroll = function () {
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.querySelector(".header").style.height = "6.5rem";
+    document.querySelector(".header").style.backgroundColor = "#FFF";
     document.querySelector(".header").style.boxShadow =
       "-21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3)";
     document.querySelector(".mobile-nav-icon").style.width = "3rem";
     document.querySelector(".mobile-nav-icon").style.height = "3rem";
   } else {
     document.querySelector(".header").style.height = "10rem";
+    document.querySelector(".header").style.backgroundColor = "#FAFAFF";
     document.querySelector(".header").style.boxShadow = "";
     document.querySelector(".mobile-nav-icon").style.width = "5rem";
     document.querySelector(".mobile-nav-icon").style.height = "5rem";
@@ -172,27 +174,3 @@ const workObserver = new IntersectionObserver(
 );
 
 workObserver.observe(WorkData);
-
-/* =======================================
-        LAZY LOADING IMAGES
-   ======================================= */
-const imageElement = document.querySelectorAll("img[data-src]");
-
-const lazyLoad = (entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    entry.target.src = entry.target.dataset.src;
-  });
-  // console.log(entries);
-};
-
-const lazyLoadObserver = new IntersectionObserver(lazyLoad, {
-  root: null,
-  threshold: 0.7,
-});
-
-imageElement.forEach((image) => {
-  lazyLoadObserver.observe(image);
-});
-
-// CHANGE IT ON OTHER PAGES

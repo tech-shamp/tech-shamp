@@ -54,25 +54,3 @@ function scrollFunction() {
     document.querySelector(".header").style.boxShadow = "";
   }
 }
-
-/* =======================================
-        LAZY LOADING IMAGES
-   ======================================= */
-const imageElement = document.querySelectorAll("img[data-src]");
-
-const lazyLoad = (entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    entry.target.src = entry.target.dataset.src;
-  });
-  // console.log(entries);
-};
-
-const lazyLoadObserver = new IntersectionObserver(lazyLoad, {
-  root: null,
-  threshold: 0.7,
-});
-
-imageElement.forEach((image) => {
-  lazyLoadObserver.observe(image);
-});
