@@ -30,11 +30,13 @@ p_btns.addEventListener("click", (e) => {
 
   p_btn.forEach((curElem) => curElem.classList.remove("p-btn-active"));
 
+  if (!p_btn_click.classList.contains("p-btn")) return;
+
   p_btn_click.classList.add("p-btn-active");
-  console.log(p_btn_click);
+  // console.log(p_btn_click);
 
   const btn_num = p_btn_click.dataset.btnNum;
-  console.log(btn_num);
+  // console.log(btn_num);
 
   const img_active = document.querySelectorAll(`.p-btn--${btn_num}`);
 

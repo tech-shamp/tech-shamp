@@ -964,6 +964,17 @@ li {
     display: block;
   }
 
+  .img-overlay .common-heading {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .img-overlay .common-heading::before,
+  .img-overlay .common-heading::after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+
   .section-hero h1 {
     line-height: 1.05;
   }
@@ -1041,11 +1052,6 @@ li {
   }
   .header .logo {
     height: 4rem;
-  }
-
-  .section-portfolio .img-overlay .common-heading {
-    font-size: 3.5rem;
-    text-align: center;
   }
 
   .p-btns {
