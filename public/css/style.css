@@ -763,6 +763,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  /* padding: 3.2rem; */
 }
 
 .section-contact-main input,
