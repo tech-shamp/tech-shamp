@@ -1,273 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Technical Shampy, Thapa Technical" />
+    <meta
+      name="description"
+      content="This is my protfolio website to showcase the work I have done so far, the services I provide and all my Professionals life."
+    />
+    <meta name="”robots”" content="index, follow" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JAVASCRIPT,Portfolio website, website template, search engine optimization, technical shampy, web developer, wordpress developer, react developer, nodejs developer, swift, flutter"
+    />
 
-<head>
-  <!-- META TAGS -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Technical Shampy" />
-  <meta name="description" content="I am Web Developer. I work as a Freelancer. I teach on YouTube." />
-  <meta name="”robots”" content="index, follow" />
-  <meta name="keywords"
-    content="seo, search engine optimization, technical shampy, web developer, wordpress developer" />
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7597746810252907"
+      crossorigin="anonymous"
+    ></script>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7597746810252907"
-    crossorigin="anonymous"></script>
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./img/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./img/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./img/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./img/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./img/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./img/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./img/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./img/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/img/favicon/ms-icon-144x144.png"
+    />
 
-  <!-- FAVICON -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <!-- Libraries -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Libraries -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- WEBSITE CONTENT -->
+    <script defer src="./js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact - Technical Shampy</title>
+    <meta
+      name="theme-color"
+      content="linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);"
+    />
+  </head>
 
-  <!-- WEBSITE CONTENT -->
-  <script defer src="./js/contact.js"></script>
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Contact - Technical Shampy</title>
-  <meta name="theme-color" content="linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);" />
-</head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <header class="header">
+      <a href="#">
+        <img src="./img/logo.png" alt="Logo" class="logo" />
+      </a>
 
-<body>
-  <!-- NAVBAR SECTION -->
-  <header class="header">
-    <a href="#">
-      <img src="./img/logo.png" alt="Logo" class="logo" />
-    </a>
-
-    <nav class="navbar">
-      <ul class="navbar-list">
-        <li>
-          <a href="https://tech-shamp.web.app" class="navbar-link home-link">Home</a>
-        </li>
-        <li>
-          <a href="/service.html" class="navbar-link services-link">Services</a>
-        </li>
-        <li>
-          <a href="/portfolio.html" class="navbar-link portfolio-link">Portfolio</a>
-        </li>
-        <li>
-          <a href="#contact" class="navbar-link contact-link">Contact</a>
-        </li>
-        <li>
-          <a href="/about.html" class="navbar-link about-link">About</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="mobile-nav-btn">
-      <ion-icon name="menu-sharp" class="mobile-nav-icon"></ion-icon>
-      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
-    </div>
-  </header>
-
-  <!-- CONTACT SECTION -->
-  <section class="section section-contact" id="contact">
-    <div class="container">
-      <div class="common-heading">Contact Us</div>
-    </div>
-
-    <!-- MAP -->
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217760.1713187434!2d74.19430598953282!3d31.482864082533386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1653080839500!5m2!1sen!2s"
-      style="border: 0" allowfullscreen="" loading="lazy" width="100%" height="450"></iframe>
-
-    <div class="section-contact-main">
-      <form action="https://formspree.io/f/xeqnnqez" method="POST">
-        <div class="grid grid-two-column">
-          <div>
-            <label for="username"></label>
-            <input type="text" name="username" placeholder="Username" id="username" required autocomplete="off" />
-          </div>
-          <div>
-            <label for="email"></label>
-            <input type="text" name="email" placeholder="demo@example.com" id="email" required autocomplete="off" />
-          </div>
-        </div>
-        <div>
-          <label for="subject"></label>
-          <input type="text" name="subject" placeholder="subject" id="subject" required autocomplete="off" />
-        </div>
-        <div>
-          <label for="textarea"></label>
-          <textarea name="textarea" id="textarea" cols="30" rows="10" min="5" placeholder="Message" required
-            autocomplete="off"></textarea>
-        </div>
-        <div>
-          <input type="submit" name="submit" value="contact us" id="submit" class="btn" />
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER SECTION -->
-  <footer class="section section-footer">
-    <div class="container grid grid-four-column">
-      <div class="f-about">
-        <h3>About</h3>
-        <p>
-          We have tested a number of registery fix and clean utilities and
-          present our top 3 list on our site for your convenience. Hope you
-          like it.
-        </p>
-      </div>
-      <!-- end -->
-      <div class="f-links">
-        <h3>Links</h3>
-        <ul>
+      <nav class="navbar">
+        <ul class="navbar-list">
           <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a class="f-home-link" href="/index.html">Home</a>
+            <a href="https://tech-shamp.web.app" class="navbar-link home-link"
+              >Home</a
+            >
           </li>
           <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a class="f-ser-link" href="/service.html">Services</a>
+            <a href="/service.html" class="navbar-link services-link"
+              >Services</a
+            >
           </li>
           <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a class="f-port-link" href="/portfolio.html">Portfolio</a>
+            <a href="/portfolio.html" class="navbar-link portfolio-link"
+              >Portfolio</a
+            >
           </li>
           <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a class="f-cont-link" href="#contact">Contact</a>
+            <a href="#contact" class="navbar-link contact-link">Contact</a>
           </li>
           <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a class="f-about-link" href="/about.html">About</a>
+            <a href="/about.html" class="navbar-link about-link">About</a>
           </li>
         </ul>
+      </nav>
+      <div class="mobile-nav-btn">
+        <ion-icon name="menu-sharp" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
       </div>
-      <!-- end -->
-      <div class="f-services">
-        <h3>Services</h3>
-        <ul>
-          <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a href="#">Web Design</a>
-          </li>
-          <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a href="#">Web Development</a>
-          </li>
-          <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a href="#">Mobile Apps</a>
-          </li>
-          <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a href="#">Photography</a>
-          </li>
-          <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a href="#">Apps Interface</a>
-          </li>
-          <li>
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-            <a href="#">Graphics Design</a>
-          </li>
-        </ul>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="common-heading">Contact Us</div>
       </div>
-      <!-- end -->
-      <div class="f-address">
-        <h3>Have a Question?</h3>
-        <address>
-          <div>
-            <p>
-              <span>
-                <ion-icon name="location-outline"></ion-icon>
-              </span>
-              Lahore, Pakistan
-            </p>
+
+      <!-- MAP -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217760.1713187434!2d74.19430598953282!3d31.482864082533386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1653080839500!5m2!1sen!2s"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        width="100%"
+        height="450"
+      ></iframe>
+
+      <div class="section-contact-main">
+        <form action="https://formspree.io/f/xeqnnqez" method="POST">
+          <div class="grid grid-two-column">
+            <div>
+              <label for="username"></label>
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                id="username"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <label for="email"></label>
+              <input
+                type="text"
+                name="email"
+                placeholder="demo@example.com"
+                id="email"
+                required
+                autocomplete="off"
+              />
+            </div>
           </div>
-
           <div>
-            <p>
-              <span>
-                <ion-icon name="call-outline"></ion-icon>
-              </span>
-              <a href="tel:+923124874118" target="_blank"> +92 3124874118 </a>
-            </p>
+            <label for="subject"></label>
+            <input
+              type="text"
+              name="subject"
+              placeholder="subject"
+              id="subject"
+              required
+              autocomplete="off"
+            />
           </div>
-
           <div>
-            <p>
-              <span>
-                <ion-icon name="mail-outline"></ion-icon>
-              </span>
-              <a href="mailto:shamp@nooreazal.org?subject=I have a Question" target="_blank">
-                shamp@nooreazal.org
-              </a>
-            </p>
+            <label for="textarea"></label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              min="5"
+              placeholder="Message"
+              required
+              autocomplete="off"
+            ></textarea>
           </div>
-        </address>
+          <div>
+            <input
+              type="submit"
+              name="submit"
+              value="contact us"
+              id="submit"
+              class="btn"
+            />
+          </div>
+        </form>
       </div>
-    </div>
-    <div class="container">
-      <div class="f-social-links">
-        <a href="https://instagram.com/tech_shamp" target="_blank">
-          <ion-icon class="icons" name="logo-instagram"></ion-icon>
-        </a>
-        <a href="https://pinterest.com/iboy_shamp" target="_blank">
-          <ion-icon class="icons" name="logo-pinterest"></ion-icon>
-        </a>
-        <a href="https://github.com/tech-shamp" target="_blank">
-          <ion-icon class="icons" name="logo-github"></ion-icon>
-        </a>
-      </div>
-      <div class="f-credits">
-        <p>
-          Copyright ©2022 All rights reserved | Made with ❤ by Technical
-          Shampy, with the help of Thapa Technical
-        </p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Libraries -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-</body>
+    <!-- FOOTER SECTION -->
+    <footer class="section section-footer">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>
+            We have tested a number of registery fix and clean utilities and
+            present our top 3 list on our site for your convenience. Hope you
+            like it.
+          </p>
+        </div>
+        <!-- end -->
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a class="f-home-link" href="/index.html">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a class="f-ser-link" href="/service.html">Services</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a class="f-port-link" href="/portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a class="f-cont-link" href="#contact">Contact</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a class="f-about-link" href="/about.html">About</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end -->
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Web Design</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Web Development</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Mobile Apps</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Photography</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Apps Interface</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </span>
+              <a href="#">Graphics Design</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end -->
+        <div class="f-address">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="location-outline"></ion-icon>
+                </span>
+                Lahore, Pakistan
+              </p>
+            </div>
 
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="call-outline"></ion-icon>
+                </span>
+                <a href="tel:+923124874118" target="_blank"> +92 3124874118 </a>
+              </p>
+            </div>
+
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="mail-outline"></ion-icon>
+                </span>
+                <a
+                  href="mailto:shamp@nooreazal.org?subject=I have a Question"
+                  target="_blank"
+                >
+                  shamp@nooreazal.org
+                </a>
+              </p>
+            </div>
+          </address>
+        </div>
+      </div>
+      <div class="container">
+        <div class="f-social-links">
+          <a href="https://instagram.com/tech_shamp" target="_blank">
+            <ion-icon class="icons" name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://pinterest.com/iboy_shamp" target="_blank">
+            <ion-icon class="icons" name="logo-pinterest"></ion-icon>
+          </a>
+          <a href="https://github.com/tech-shamp" target="_blank">
+            <ion-icon class="icons" name="logo-github"></ion-icon>
+          </a>
+        </div>
+        <div class="f-credits">
+          <p>
+            Copyright ©2022 All rights reserved | Made with ❤ by Technical
+            Shampy, with the help of Thapa Technical
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Libraries -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
 </html>
